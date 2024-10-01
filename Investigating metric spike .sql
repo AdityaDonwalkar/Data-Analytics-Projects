@@ -1,3 +1,4 @@
+-- Creating Database
 CREATE DATABASE INVESTIGATING_METRIC_SPIKE;
 USE INVESTIGATING_METRIC_SPIKE;
 CREATE TABLE USERS 
@@ -20,8 +21,8 @@ CREATE TABLE EMAIL_EVENTS
         occurred_at	VARCHAR(255),
         action VARCHAR(255),
         user_type INT);
-        
-     
+
+-- Loading the data from infile path  
 LOAD DATA INFILE "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/users.csv"
 INTO TABLE USERS
 FIELDS TERMINATED BY ','
